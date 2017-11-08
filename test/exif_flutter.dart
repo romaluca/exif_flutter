@@ -1,15 +1,21 @@
 import 'dart:io';
-
+import "dart:async";
 import 'package:test/test.dart';
 
 import 'package:exif_flutter/exif_flutter.dart';
 
 void main() {
-  test('adds one to input values', () {
+  test('test exif', () {
     var answer = 42;
     expect(answer, 42);
     File f = new File('test.jpg');
-    readExifFromFile(f, true);
+    
+    readExifFromFile(f, true).then((data) {
+      print("exif params: $data");
+    }).catchError((e) {
+      print("exif error: $e");
+      
+    });
     /*
     final calculator = new Calculator();
     expect(calculator.addOne(2), 3);
