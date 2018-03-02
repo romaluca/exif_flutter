@@ -26,7 +26,7 @@ class Rational {
 
 Future<Map<String, dynamic>> readExifFromFile(File file, [bool printDebugInfo=false]) {
   return new ExifExtractor(printDebugInfo ? new ConsoleMessageSink() : null)
-      .findEXIFinJPEG(new BlobView(file));
+      .findEXIFinJPEG(new BlobView(file)) ?? {};
 }
 
 class ConsoleMessageSink implements LogMessageSink {

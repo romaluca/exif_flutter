@@ -1,5 +1,4 @@
 import 'dart:io';
-import "dart:async";
 import 'package:test/test.dart';
 
 import 'package:exif_flutter/exif_flutter.dart';
