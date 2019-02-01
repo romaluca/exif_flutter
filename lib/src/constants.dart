@@ -1,5 +1,5 @@
 class ExifConstants {
-  static const Map<int, String> tags = const {
+  static const Map<int, String> tags = const <int, String>{
     // version tags
     0x9000: "ExifVersion", // EXIF version
     0xA000: "FlashpixVersion", // Flashpix format version
@@ -81,7 +81,7 @@ class ExifConstants {
     0xA420: "ImageUniqueID", // Identifier assigned uniquely to each image
   };
 
-  static const Map<int, String> tiffTags = const {
+  static const Map<int, String> tiffTags = const <int, String>{
     0x0100: "ImageWidth",
     0x0101: "ImageHeight",
     0x8769: "ExifIFDPointer",
@@ -117,7 +117,7 @@ class ExifConstants {
     0x8298: "Copyright",
   };
 
-  static const Map<int, String> gpsTags = const {
+  static const Map<int, String> gpsTags = const <int, String>{
     0x0000: "GPSVersionID",
     0x0001: "GPSLatitudeRef",
     0x0002: "GPSLatitude",
@@ -151,8 +151,8 @@ class ExifConstants {
     0x001E: "GPSDifferential",
   };
 
-  static const Map<String, Map<int, String>> stringValues = const {
-    "ExposureProgram": const {
+  static const Map<String, Map<int, String>> stringValues = const <String, Map<int, String>>{
+    "ExposureProgram": const <int, String>{
       0: "Not defined",
       1: "Manual",
       2: "Normal program",
@@ -163,7 +163,7 @@ class ExifConstants {
       7: "Portrait mode",
       8: "Landscape mode",
     },
-    "MeteringMode": const {
+    "MeteringMode": const <int, String>{
       0: "Unknown",
       1: "Average",
       2: "CenterWeightedAverage",
@@ -173,7 +173,7 @@ class ExifConstants {
       6: "Partial",
       255: "Other",
     },
-    "LightSource": const {
+    "LightSource": const <int, String>{
       0: "Unknown",
       1: "Daylight",
       2: "Fluorescent",
@@ -196,7 +196,7 @@ class ExifConstants {
       24: "ISO studio tungsten",
       255: "Other",
     },
-    "Flash": const {
+    "Flash": const <int, String>{
       0x0000: "Flash did not fire",
       0x0001: "Flash fired",
       0x0005: "Strobe return light not detected",
@@ -224,7 +224,7 @@ class ExifConstants {
       0x005F:
           "Flash fired, auto mode, return light detected, red-eye reduction mode",
     },
-    "SensingMethod": const {
+    "SensingMethod": const <int, String>{
       1: "Not defined",
       2: "One-chip color area sensor",
       3: "Two-chip color area sensor",
@@ -233,55 +233,55 @@ class ExifConstants {
       7: "Trilinear sensor",
       8: "Color sequential linear sensor",
     },
-    "SceneCaptureType": const {
+    "SceneCaptureType": const <int, String>{
       0: "Standard",
       1: "Landscape",
       2: "Portrait",
       3: "Night scene",
     },
-    "SceneType": const {
+    "SceneType": const <int, String>{
       1: "Directly photographed",
     },
-    "CustomRendered": const {
+    "CustomRendered": const <int, String>{
       0: "Normal process",
       1: "Custom process",
     },
-    "WhiteBalance": const {
+    "WhiteBalance": const <int, String>{
       0: "Auto white balance",
       1: "Manual white balance",
     },
-    "GainControl": const {
+    "GainControl": const <int, String>{
       0: "None",
       1: "Low gain up",
       2: "High gain up",
       3: "Low gain down",
       4: "High gain down",
     },
-    "Contrast": const {
+    "Contrast": const <int, String>{
       0: "Normal",
       1: "Soft",
       2: "Hard",
     },
-    "Saturation": const {
+    "Saturation": const <int, String>{
       0: "Normal",
       1: "Low saturation",
       2: "High saturation",
     },
-    "Sharpness": const {
+    "Sharpness": const <int, String>{
       0: "Normal",
       1: "Soft",
       2: "Hard",
     },
-    "SubjectDistanceRange": const {
+    "SubjectDistanceRange": const <int, String>{
       0: "Unknown",
       1: "Macro",
       2: "Close view",
       3: "Distant view",
     },
-    "FileSource": const {
+    "FileSource": const <int, String>{
       3: "DSC",
     },
-    "Components": const {
+    "Components": const <int, String>{
       0: "",
       1: "Y",
       2: "Cb",
@@ -292,7 +292,7 @@ class ExifConstants {
     }
   };
 
-  static const Map<int, String> iptcFieldMap = const {
+  static const Map<int, String> iptcFieldMap = const <int, String>{
     0x78: "caption",
     0x6E: "credit",
     0x19: "keywords",
